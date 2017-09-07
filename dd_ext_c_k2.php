@@ -49,8 +49,7 @@ class PlgDD_GMaps_LocationsDD_Ext_C_K2 extends JPlugin
 					$db->setQuery($query);
 
 					// Set associated profile_id
-					$app->input->set('profile_id', (int) $db->loadObject());
-
+					$app->input->set('profile_id', (int) $db->loadObject()->id);
 				}
 			}
 		}
